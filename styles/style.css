@@ -5,17 +5,28 @@ img{
     height: 350px;
     width: 100%;
 }
-.row-2{
+.row-2, .row-3{
     display: flex;
     gap: 5px;
 }
+.row-2>div, .row-3>div{
+    flex: 1;
+}
 .row-2-1{
-    height: 350px;
     display: flex;
     gap: 5px;
     flex-direction: column;
-    width: 100%;
 }
 .row-2-1> img{
     height: calc(173px - .5px);
 }
+.third-row-second-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.third-row-second-container > div > img{
+    height: 170px;
+
+}
+
